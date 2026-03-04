@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #3b141c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+}
+
+.logo {
+    color: white;
+    font-family: 'Miniver', cursive;
+    font-size: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav-links .active {
+    font-weight: bold;
+}
+
+.nav-icons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1.2rem;
+}
+
+.hero {
+    background-color: #3b141c;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.hero-text {
+    width: 60%;
+    color: white;
+}
+
+.hero-text h1 {
+    font-family: 'Miniver', cursive;
+    color: #f3961c;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: #cccccc;
+    max-width: 500px;
+}
+
+.buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.btn {
+    background-color: #f3961c;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.hero-img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img img {
+    max-height: 90vh;
+}
+
+.login{
+    background:#f3f3f3;
+    padding:70px 10%;
+}
+
+.login-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+}
+
+.login-card{
+    width:400px;
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+.login-card h2{
+    text-align:center;
+    margin-bottom:15px;
+    color:#4b0f17;
+}
+
+.user-icon{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:20px;
+    color:#555;
+}
+
+.login-card label{
+    font-size:14px;
+    color:#777;
+}
+
+.login-card input,
+.login-card input{
+    width:100%;
+    padding:12px;
+    margin:6px 0 15px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.recordar{
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.recordar a{
+    color:#f39c12;
+    text-decoration:none;
+}
+
+.btn-login{
+    width:100%;
+    padding:12px;
+    background:#4b0f17;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.divider{
+    text-align:center;
+    margin:25px 0;
+    position:relative;
+}
+
+.divider span{
+    background:white;
+    padding:0 10px;
+    position:relative;
+    z-index:1;
+}
+
+.divider::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:#ccc;
+    top:50%;
+    left:0;
+}
+
+.social{
+    display:flex;
+    gap:15px;
+}
+
+.social button{
+    flex:1;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    background:white;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+}
+
+.social img{
+    width:18px;
+}
+
+.registro{
+    text-align:center;
+    margin-top:20px;
+    font-size:14px;
+}
+
+.registro a{
+    color:#f39c12;
+    text-decoration:none;
+}
+
+.seguridad{
+    text-align:center;
+    font-size:12px;
+    margin-top:15px;
+    color:#666;
+}
+
+.coffee-img{
+    text-align:center;
+}
+
+.coffee-img h3{
+    font-family:'Miniver', cursive;
+    color:#f39c12;
+    font-size:40px;
+}
+
+.coffee-img img{
+    width:420px;
+}
+
+@media (max-width:900px){
+
+.login-container{
+    flex-direction:column;
+}
+
+.coffee-img img{
+    width:300px;
+}
+
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        margin: 0;
+    }
+
+    .nav-icons {
+        margin-top: 10px;
+    }
+}
