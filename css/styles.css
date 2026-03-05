@@ -125,6 +125,94 @@ body {
     }
 }
 
+@media (max-width: 992px){
+
+    .hero{
+        padding:40px;
+    }
+
+    .hero-text{
+        width:55%;
+    }
+
+    .hero-img{
+        width:45%;
+    }
+
+    .hero-img img{
+        max-height:70vh;
+    }
+
+    .hero-text h1{
+        font-size:2.8rem;
+    }
+
+}
+
+/* CELULAR */
+
+@media (max-width:768px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:40px 20px;
+    }
+
+    /* imagen arriba */
+    .hero-img{
+        order:-1;
+        width:100%;
+        margin-bottom:25px;
+    }
+
+    .hero-img img{
+        width:80%;
+        max-height:none;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-text h1{
+        font-size:2.3rem;
+    }
+
+    .hero-text h2{
+        font-size:1.2rem;
+    }
+
+    .hero-text p{
+        margin:auto;
+    }
+
+    .buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+}
+
+/* CELULARES PEQUEÑOS */
+
+@media (max-width:480px){
+
+    .hero-text h1{
+        font-size:1.9rem;
+    }
+
+    .hero-text h2{
+        font-size:1rem;
+    }
+
+    .btn{
+        padding:10px 20px;
+        font-size:0.9rem;
+    }
+
+}
+
 @media (max-width: 768px) {
 
     .navbar {
@@ -147,59 +235,6 @@ body {
     .nav-icons {
         margin-top: 10px;
     }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 20px;
-    }
-
-    .hero-img {
-        width: 100%;
-        margin-top: 30px;
-    }
-
-    .hero-img img {
-        width: 80%;
-        max-height: none;
-    }
-
-    .hero-text {
-        width: 100%;
-    }
-
-    .hero-text h1 {
-        font-size: 2.3rem;
-    }
-
-    .hero-text h2 {
-        font-size: 1.2rem;
-    }
-
-    .hero-text p {
-        margin: 0 auto;
-    }
-
-    .buttons {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
     
 }
 
-@media (max-width: 480px) {
-
-    .hero-text h1 {
-        font-size: 1.9rem;
-    }
-
-    .hero-text h2 {
-        font-size: 1rem;
-    }
-
-    .btn {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-}

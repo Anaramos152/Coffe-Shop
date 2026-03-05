@@ -98,26 +98,258 @@ body {
     max-height: 90vh;
 }
 
-@media (max-width: 768px) {
+.carrito{
+    background:#eeeeee;
+    padding:40px;
+}
 
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-        text-align: center;
+.contenedor-carrito{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 420px;
+    gap:40px;
+}
+
+.carrito-izquierda h1{
+    color:#5a0f1a;
+}
+
+.subtitulo{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.carrito-vacio{
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+
+.icono-carrito{
+    font-size:60px;
+    color:#999;
+    margin-bottom:10px;
+}
+
+.btn-explorar{
+    margin-top:20px;
+    background:#5a0f1a;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.resumen{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+
+.resumen h2{
+    margin-bottom:15px;
+}
+
+.linea{
+    display:flex;
+    justify-content:space-between;
+    margin:10px 0;
+}
+
+.precio{
+    color:#2e8b57;
+}
+
+.gratis{
+    color:#2e8b57;
+}
+
+.total{
+    display:flex;
+    justify-content:space-between;
+    border:1px solid #ccc;
+    padding:10px;
+    border-radius:6px;
+    margin-top:10px;
+}
+
+/* FORMULARIO */
+
+.resumen label{
+    display:block;
+    margin-top:12px;
+    font-size:14px;
+}
+
+.resumen input{
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #aaa;
+    margin-top:5px;
+}
+
+.fila{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+/* BOTON */
+
+.btn-comprar{
+    width:100%;
+    margin-top:15px;
+    padding:12px;
+    background:#5a0f1a;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* INFO FINAL */
+
+.info{
+    margin-top:15px;
+    font-size:13px;
+}
+
+.info p{
+    margin:5px 0;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background:#ddd;
+    margin:20px 0;
+}
+
+/* ============================= */
+/* RESPONSIVE TABLET */
+/* ============================= */
+
+@media (max-width: 1024px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:40px;
     }
 
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+    .hero-text{
+        width:100%;
     }
 
-    .nav-links a {
-        margin: 0;
+    .hero-img{
+        width:100%;
+        margin-top:30px;
     }
 
-    .nav-icons {
-        margin-top: 10px;
+    .hero-img img{
+        max-height:400px;
     }
+
+    .contenedor-carrito{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+}
+
+
+/* ============================= */
+/* RESPONSIVE CELULAR */
+/* ============================= */
+
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    .nav-links{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .nav-icons{
+        margin-top:10px;
+    }
+
+    .hero{
+        padding:30px 20px;
+    }
+
+    .hero-text h1{
+        font-size:2.5rem;
+    }
+
+    .hero-text h2{
+        font-size:1.2rem;
+    }
+
+    .buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .carrito{
+        padding:20px;
+    }
+
+    .carrito-vacio{
+        padding:25px;
+    }
+
+    .icono-carrito{
+        font-size:45px;
+    }
+
+    .fila{
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+/* ============================= */
+/* CELULARES PEQUEÑOS */
+/* ============================= */
+
+@media (max-width: 480px){
+
+    .hero-text h1{
+        font-size:2rem;
+    }
+
+    .hero-text p{
+        font-size:14px;
+    }
+
+    .btn{
+        padding:10px 18px;
+        font-size:14px;
+    }
+
+    .resumen{
+        padding:20px;
+    }
+
+    .btn-comprar{
+        font-size:14px;
+    }
+
 }

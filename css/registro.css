@@ -98,6 +98,127 @@ body {
     max-height: 90vh;
 }
 
+.registro{
+    background:#e9e9e9;
+    padding:40px;
+}
+
+.contenedor-registro{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+
+.icono{
+    text-align:center;
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.card h2{
+    text-align:center;
+    color:#5a0f1a;
+    margin-bottom:20px;
+}
+
+form label{
+    font-size:14px;
+    display:block;
+    margin-top:10px;
+}
+
+form input{
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #aaa;
+    margin-top:5px;
+}
+
+.fila{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.terminos{
+    font-size:13px;
+    margin-top:15px;
+}
+
+.terminos span{
+    color:orange;
+}
+
+button{
+    width:100%;
+    margin-top:15px;
+    padding:12px;
+    background:#5a0f1a;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.derecha{
+    display:flex;
+    flex-direction:column;
+}
+
+.bebidas{
+    margin-top:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+.bebidas h3{
+    color:#ff9a1f;
+    font-family: 'Miniver', cursive;;
+    font-size:36px;
+}
+
+.bebidas img{
+    width:200px;
+}
+
+@media (max-width:768px){
+
+.contenedor-registro{
+    grid-template-columns:1fr;
+}
+
+.bebidas{
+    order:1;
+    flex-direction:column;
+    text-align:center;
+}
+
+.bebidas img{
+    width:180px;
+}
+
+.derecha .card{
+    order:2;
+}
+
+.izquierda{
+    order:3;
+}
+
+}
+
 @media (max-width: 768px) {
 
     .navbar {
