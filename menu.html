@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/menu.css">
 </head>
@@ -20,7 +21,10 @@
         </div>
 
         <div class="nav-icons">
-            <a href="carrito.html"><span>🛒</span></a>
+            <a href="#carrito" class="cart-link">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count" class="cart-count">0</span>
+            </a>
             <a href="login.html"><span>👤</span></a>
         </div>
     </nav>
@@ -39,7 +43,7 @@
             <p>Amplia variedad de cafés calientes al vapor para sentir fresco y ligero su paladar</p>
         </div>
         <div class="botones">
-            <button>Comprar</button>
+            <button class="order-btn">Comprar</button>
             <button>Detalles</button>
         </div>
     </div>
@@ -51,7 +55,7 @@
             <p>Cremoso y espumoso café frío para hacerte sentir más fresco</p>
         </div>
         <div class="botones">
-            <button>Comprar</button>
+            <button class="order-btn">Comprar</button>
             <button>Detalles</button>
         </div>
     </div>
@@ -63,7 +67,7 @@
             <p>Bebida refrescante con frutas e hielo para hacerte sentir renovado</p>
         </div>
         <div class="botones">
-            <button>Comprar</button>
+            <button class="order-btn">Comprar</button>
             <button>Detalles</button>
         </div>
     </div>
@@ -75,7 +79,7 @@
             <p>La mejor combinación entre sabor calidad y precio</p>
         </div>
         <div class="botones">
-            <button>Comprar</button>
+            <button class="order-btn">Comprar</button>
             <button>Detalles</button>
         </div>
     </div>
@@ -87,7 +91,7 @@
             <p>Amplia variedad de comidas rápidas para degustar de la mejor forma a su paladar</p>
         </div>
         <div class="botones">
-            <button>Comprar</button>
+            <button class="order-btn">Comprar</button>
             <button>Detalles</button>
         </div>
     </div>
@@ -99,7 +103,7 @@
             <p>Diversidad de postres con frutas y otros ingredientes que alteran tu gusto</p>
         </div>
         <div class="botones">
-            <button>Comprar</button>
+            <button class="order-btn">Comprar</button>
             <button>Detalles</button>
         </div>
     </div>
@@ -107,6 +111,11 @@
 </div>
 </section>
 
+<div id="toast" class="toast">
+  <span class="icon">☕</span>
+  <span id="toast-text">Producto agregado</span>
+</div>
+
+<script src="./script.js"></script>
 </body>
 </html>
-</body>
